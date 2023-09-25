@@ -105,112 +105,57 @@ a:visited{
 .bodyimg img{
     height:600px;
 }
-
-@media screen and (min-width: 2200px) {
-    .menu{
-        display: flex;
-        background-color:black;
-        padding: 18.75px;
-        font-size: 25px;
-        font-family: normal;
-        font-weight: 500;
-        color: white;
-        padding-left: 62.5px;
+@media screen and (max-width: 600px) {
+    .menu {
+      display: block; /* Cambiar a disposición de bloque para dispositivos móviles */
+      background-color: black;
+      padding: 15px;
+      font-size: 16px; /* Tamaño de fuente reducido para dispositivos móviles */
+      text-align: center; /* Centrar texto en dispositivos móviles */
     }
-    body{
-        margin: 0px;
-        background-color:#f7f2f2;
-        
+  
+    .bodyimg p {
+      font-size: 40px; /* Reducir el tamaño de fuente para dispositivos móviles */
     }
-    a{
-        text-decoration: none;
+  
+    .bodyimg h3 {
+      font-size: 20px; /* Reducir el tamaño de fuente para dispositivos móviles */
     }
-    a:link{
-        color:white;
+  
+    .grid {
+      margin: 20px; /* Reducir el margen para dispositivos móviles */
     }
-    a:visited{
-        color:white;
+  
+    .grid img {
+      width: 100%; /* Hacer que las imágenes ocupen todo el ancho en dispositivos móviles */
     }
-    .bodyimg{
-        position: relative;
-    }
-    .bodyimg p{
-        text-align: center;
-        color:#f7f2f2;
-        font-size: 68.75px;
-        font-family: normal;
-        position: absolute;
-        top:10%;
-        left:50%;
-        transform: translate(-50%,-50%);
-    }
-    .bodyimg h3{
-        text-align: center;
-        color:#f7f2f2;
-        font-family: normal;
-        font-size: 37.5px;
-        width: 2000px;
-        position: absolute;
-        top:40%;
-        left:45%;
-        transform: translate(-40%, -40%);
-    }
-        
-    .grid{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 50px;
-        font-family: normal;
-        
-    }
-    .grid img{
-        border: 1px solid black;
-        border-radius: 62.5px;
-    }
+  
     .origami {
-        border-radius: 25px;
-        background-color: #ffffff;
-        padding: 50px;
-        margin: 131.25px;
-        width:387.5px;
-        font-family: normal;
-        text-align: center;
+      margin: 20px auto; /* Centrar el contenido en dispositivos móviles */
+      width: 80%; /* Reducir el ancho del contenedor en dispositivos móviles */
     }
-    .origami:hover{
+  
+    .text h3 {
+      top: auto;
+      left: auto;
+      font-size: 30px; /* Ajustar el tamaño de fuente en dispositivos móviles */
+      text-align: center;
+    }
+  
+    .headText {
+      padding-right: 0; /* Eliminar el relleno derecho en dispositivos móviles */
+    }
+  
+    .textH3,
+    .text h4 {
+      font-size: 20px; /* Ajustar el tamaño de fuente en dispositivos móviles */
+    }
+  
+    .textH4 {
+      line-height: 30px; /* Ajustar la altura de línea en dispositivos móviles */
+    }
     
-        transform: scale(1.1);
+    .bodyimg img {
+      height: auto; /* Ajustar la altura de la imagen automáticamente en dispositivos móviles */
     }
-    
-    .text h3{
-        top:62%;
-        left:35%;
-        font-family: normal;
-        font-size: 43.75px;
-        position: static;
-        text-align: center;
-        align-content: center;
-    }
-    .headText{
-        padding-right: 30%;
-    }
-    .textH3{
-        font-family: normal;
-        font-size: 31.25px;
-        text-align: center;
-        align-content: center;
-    }
-    .textH4{
-        line-height: 43.75px;
-        font-size: 22.5px;
-    }
-    .text h4{
-        font-family: normal;
-        font-size: 31.25px;
-        position: static;
-        text-align: center;
-        align-content: center;
-    }
-    .bodyimg img{
-        height:250px;
-    }
-}
+  }
